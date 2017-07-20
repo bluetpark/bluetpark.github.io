@@ -16,7 +16,7 @@
 마크업을 하다 보면 디자인 원본 파일에서 추출한 컬러 값과 저장한 이미지의 색상이 서로 다른 경우가 발생 합니다.    
 주로 이미지로만 이루어져 있는 페이지보다 이미지와 배경색이 같이 사용하는 경우에 발견 됩니다.
 
-![colorspace_img1](https://lh3.googleusercontent.com/Bz7JPEDPeG2JY7049Zjtggy98Y_hyFHQEzQEmDxA6pyVkUB0D1UV9CfwHoTQ4qVPJBdkzgy41KMJFEw) ![colorspace_img2](https://lh4.googleusercontent.com/LwuL_kxX6-GBpoY4eR0290NI-EPWCHoS0F-RXF7_K7mDiZVTn2t9PH4Bq4Y88TYFR66Nch0XBtwDpZ8)
+![colorspace_img1](images/colorspace/colorspace_img1.jpg)
 
 미미한 차이이긴 하지만 분명 서로 다른 색으로, 실제로 컬러가 다르다고 QA 대상이 되는 경우도 종종 있습니다.    
 이런 문제점은 왜 발생하고 또 어떻게 해결해야 할까요?    
