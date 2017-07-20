@@ -16,7 +16,7 @@
 마크업을 하다 보면 디자인 원본 파일에서 추출한 컬러 값과 저장한 이미지의 색상이 서로 다른 경우가 발생 합니다.    
 주로 이미지로만 이루어져 있는 페이지보다 이미지와 배경색이 같이 사용하는 경우에 발견 됩니다.
 
-![colorspace_img1](images/colorspace/colorspace_img1.jpg)
+![colorspace_img1](images/colorspace/colorspace_img1.jpg) ![colorspace_img2](images/colorspace/colorspace_img2.jpg)
 
 미미한 차이이긴 하지만 분명 서로 다른 색으로, 실제로 컬러가 다르다고 QA 대상이 되는 경우도 종종 있습니다.    
 이런 문제점은 왜 발생하고 또 어떻게 해결해야 할까요?    
@@ -60,13 +60,13 @@
 ### 확인 해봅시다
 문제가 되는 파일을 열어 `Edit > Convert to Profile...` 클릭 후 `Source Space`를 확인 해봅시다.
 
-![colorspace_img3](https://lh3.googleusercontent.com/ma7ExMV_8U_UW4MZGhyim08h9L7NbsXAZSugXaU-JemIew92yzRpRrvlLTJeIzeAkb0bFVtwxKQ2GRw) ![colorspace_img4](https://lh6.googleusercontent.com/sSTa747l4a2ZyZyspuVU_SGjqAhBLCeLJSL7I5oUp361ap3T0-qc7QObrbPN1QeH4OLDf6f_e54caC0)
+![colorspace_img3](images/colorspace/colorspace_img3.jpg) ![colorspace_img4](images/colorspace/colorspace_img4.jpg)
 
 Profile이 Display라는 것으로 되어 있습니다.
 
 정상적인 프로파일의 상태를 한 번 보죠.
 
-![colorspace_img5](https://lh5.googleusercontent.com/TRfV2uUS1sXKYbSyjcnbNBm1i9SggjnxQ03xcA80HEYJYVYNYBUdbOPm8R6HJBLc3hiv_3WIufz5GZ4)
+![colorspace_img5](images/colorspace/colorspace_img5.jpg)
 
 Profile에 **sRGB IEC61966-2.1** 이라고 쓰여 있습니다.
 이 프로파일이 우리가 찾는 표준인 sRGB의 프로파일입니다.
@@ -81,9 +81,9 @@ Profile에 **sRGB IEC61966-2.1** 이라고 쓰여 있습니다.
 위에서 표준 프로파일이 **sRGB IEC61966-2.1**인 것을 알게 되었습니다.    
 이 프로파일로 변환을 해주면 됩니다.
 
-![colorspace_img6](https://lh5.googleusercontent.com/UsNo5AhPnc-N_ItKdFWofJ1Ucnox532EcFtRN2raoEfyC10FuqpmDDLVMpUhqq-iHq5hW6X43ar3bN8)
+![colorspace_img6](images/colorspace/colorspace_img6.jpg)
 
-![colorspace_img7](https://lh3.googleusercontent.com/7Ou5VZL6deh-bXec4E4V7l-jWq25h1DopFXIpD94ob_BUrDNiyujK019ceERmggVP4CUhhrNlq0qW3I)
+![colorspace_img7](images/colorspace/colorspace_img7.jpg)
 
 1. 프로파일을 확인했을 때와 같은 방법으로 `Edit > Convert to Profile...`을 클릭합니다.
 2. `Destination Space`의 Profile 셀렉트박스에서 `Working RGB - sRGB IEC61966-2.1`을 선택합니다.
@@ -95,7 +95,7 @@ Profile에 **sRGB IEC61966-2.1** 이라고 쓰여 있습니다.
 자, 눈으로 보기엔 변한 것 같지 않아 보일 수 있습니다.    
 하지만 이제 배경 컬러 값을 다시 찍어보죠.
 
-![colorspace_img8](https://lh5.googleusercontent.com/Qr_MfO2rPAyfL-Z0XNNJF3xn9JRkyw7wKT2-H3v7Bi7ypBDdoKIcL2gYIOABNEHKmSDjKPC-nV0SOV0) ![colorspace_img9](https://lh6.googleusercontent.com/T2PsZt4Aqj7IGgqSEZqTMz6vAnEhso1Yqo6d5vWxnfKNf8L672ueamruNSkhSiQC8QjzY8rVoQf7S6o)
+![colorspace_img8](images/colorspace/colorspace_img8.jpg) ![colorspace_img9](images/colorspace/colorspace_img9.jpg)
 
 컬러 값이 바뀌었고 css를 작성해서 적용해보면 이미지와 배경 컬러가 같아졌습니다.
 
